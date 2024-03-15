@@ -30,5 +30,8 @@ jobs:
       - name: Generate Key
         run: php artisan key:generate
 
+      - name: Directory permission
+        run: chmod -R 777 storage bootstrap/cache
+
       - name: Execute unit and feature test for PHP
         run: /vendor/bin/phpunit
