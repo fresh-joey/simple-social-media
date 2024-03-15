@@ -25,7 +25,7 @@ jobs:
         run: composer update && composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
       - name: Install npm dependencies
-        run: npm install
+        run: npm install && npm run dev
 
       - name: Generate Key
         run: php artisan key:generate
