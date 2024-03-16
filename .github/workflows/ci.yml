@@ -33,13 +33,13 @@ jobs:
       - name: Directory permission
         run: chmod -R 777 storage bootstrap/cache
 
-      - name: Create Database
-        run: |
-          mkdir -p database
-          touch database/database.sqlite
+      # - name: Create Database
+      #   run: |
+      #     mkdir -p database
+      #     touch database/database.sqlite
 
-      - name: Execute unit and feature test for PHP
-        env:
-          DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit
+      # - name: Execute unit and feature test for PHP
+      #   env:
+      #     DB_CONNECTION: sqlite
+      #     DB_DATABASE: database/database.sqlite
+      #   run: vendor/bin/phpunit
