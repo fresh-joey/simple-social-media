@@ -59,7 +59,7 @@ jobs:
         # key: ${{ secrets.GCE_PRIVATE_KEY}}
         # script: |
         run:
-          ssh -vvv -i "$SSH_PRIVATE_KEY" ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "echo Hello"
+          ssh -vvv -i "$SSH_PRIVATE_KEY" ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "echo Hello World"
           # cd /var/www/html
           # git pull origin main
           # composer update
