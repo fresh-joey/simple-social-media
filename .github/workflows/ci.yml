@@ -38,8 +38,8 @@ jobs:
           mkdir -p database
           touch database/database.sqlite
 
-      # - name: Execute unit and feature test for PHP
-      #   env:
-      #     DB_CONNECTION: sqlite
-      #     DB_DATABASE: database/database.sqlite
-      #   run: vendor/bin/phpunit
+      - name: Execute unit and feature test for PHP
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: vendor/bin/phpunit
