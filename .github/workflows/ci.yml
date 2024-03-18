@@ -57,7 +57,9 @@ jobs:
           host: ${{ secrets.GCE_HOST}}
           username: ${{ secrets.GCE_USER}}
           key: ${{ secrets.GCE_PRIVATE_KEY}}
+          port: 22
           script: |
+            ssh -vvv -i "$SSH_PRIVATE_KEY" ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "echo Hello"
             cd /var/www/html
             git pull origin main
             composer update
