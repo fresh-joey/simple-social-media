@@ -8,7 +8,7 @@ echo "Deployment started ......."
 (php artisan down) || true
 
 # Pull the latest version of the app
-cd /var/www/social_media
+
 git pull origin main
 
 
@@ -26,6 +26,7 @@ sudo apt install nodejs
 node -v
 
 # Compile npm assets
+cd /var/www/social_media
 npm run build
 npm run prod
 
