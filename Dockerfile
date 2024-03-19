@@ -19,4 +19,3 @@ RUN chown -R www-data:www-data /var/www/storage &&\
     echo "Listen 8080" >> /etc/apache2/ports.conf && \
     a2enmod rewrite
 
-CMD ["bash", "-c", "apache2-foreground & php artisan migrate --force && wait"]
