@@ -8,7 +8,7 @@ echo "Deployment started ..."
 (php artisan down) || true
 
 # Pull the latest version of the app
-git pull origin production
+git pull origin main
 
 # Install composer dependencies
 composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
@@ -20,6 +20,7 @@ php artisan clear-compiled
 php artisan optimize
 
 # Compile npm assets
+npm run build
 npm run prod
 
 # Run database migrations
