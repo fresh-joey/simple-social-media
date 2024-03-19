@@ -61,4 +61,4 @@ jobs:
           username: ${{ secrets.USERNAME}}
           port: ${{ secrets.PORT}}
           key: ${{ secrets.PRIVATE_KEY}}
-          script: "cd /var/www/html && ./.scripts/deploy.sh"
+          script: "cd /var/www/social_media && ./.scripts/deploy.sh"
