@@ -33,6 +33,11 @@ npm run prod
 # Run database migrations
 php artisan migrate --force
 
+sudo chown -R $USER:www-data /var/www/social_media/storage
+sudo chown -R $USER:www-data /var/www/social_media/bootstrap/cache
+sudo chmod -R 775 /var/www/social_media/storage
+sudo chmod -R 755 /var/www/social_media/bootstrap/cache
+
 # Exit maintenance mode
 php artisan up
 
