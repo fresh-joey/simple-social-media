@@ -19,14 +19,14 @@ git pull origin main
 # php artisan optimize
 
 # Install Nodejs
-cd ~
 curl -sL https://deb.nodesource.com/setup_21.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
 node -v
+rm nodesource_setup.sh
 
 # Compile npm assets
-cd /var/www/social_media
+# cd /var/www/social_media
 npm run build
 npm run prod
 
