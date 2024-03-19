@@ -10,10 +10,6 @@ echo "Deployment started ..."
 # Pull the latest version of the app
 git pull origin main
 
-# Install composer dependencies
-composer update
-composer install
-
 
 # Clear the old cache
 php artisan clear-compiled
