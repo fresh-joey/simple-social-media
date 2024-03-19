@@ -27,7 +27,7 @@ rm nodesource_setup.sh
 
 # Compile npm assets
 # cd /var/www/social_media
-npm run prod
+npm run dev
 
 # Run database migrations
 php artisan migrate --force
