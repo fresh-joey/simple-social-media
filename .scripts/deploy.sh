@@ -13,10 +13,10 @@ git pull origin main
 
 
 # Clear the old cache
-php artisan clear-compiled
+# php artisan clear-compiled
 
 # Recreate cache
-php artisan optimize
+# php artisan optimize
 
 # Install Nodejs
 cd ~
