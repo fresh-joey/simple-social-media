@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -e
+set -e
 
 echo "Deployment started ..."
 
@@ -12,6 +12,9 @@ git pull origin main
 
 # Install composer dependencies
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --no-dev --no-interaction --prefer-dist --optimize-autoloader
+composer update
+composer install
+
 
 # Clear the old cache
 php artisan clear-compiled
