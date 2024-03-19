@@ -8,6 +8,7 @@ echo "Deployment started ......."
 (php artisan down) || true
 
 # Pull the latest version of the app
+cd /var/www/social_media
 git pull origin main
 
 
@@ -16,6 +17,13 @@ php artisan clear-compiled
 
 # Recreate cache
 php artisan optimize
+
+# Install Nodejs
+cd ~
+curl -sL https://deb.nodesource.com/setup_21.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+node -v
 
 # Compile npm assets
 npm run build
