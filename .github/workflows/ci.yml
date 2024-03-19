@@ -60,5 +60,5 @@ jobs:
           host: ${{ secrets.HOST}}
           username: ${{ secrets.USERNAME}}
           port: ${{ secrets.PORT}}
-          # key: ${{ secrets.PRIVATE_KEY}}
-          script: echo "Deployment was successful"
+          key: ${{ secrets.PRIVATE_KEY}}
+          script: "cd /var/www/html && ./.scripts/deploy.sh"
