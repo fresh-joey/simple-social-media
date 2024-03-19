@@ -43,25 +43,3 @@ jobs:
       #     DB_CONNECTION: sqlite
       #     DB_DATABASE: database/database.sqlite
       #   run: vendor/bin/phpunit
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: app_test
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Deploy to GCE
-        # uses: appleboy/ssh-action@v1.0.3
-        # with:
-        # host: ${{ secrets.GCE_HOST}}
-        # username: ${{ secrets.GCE_USER}}
-        # key: ${{ secrets.GCE_PRIVATE_KEY}}
-        # script: |
-        run:
-          ssh -vvv -i "$SSH_PRIVATE_KEY" ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "echo Hello World"
-          # cd /var/www/html
-          # git pull origin main
-          # composer update
-          # composer install --no-interaction --no-dev --optimize-autoloader
-          # php artisan migrate --seed
