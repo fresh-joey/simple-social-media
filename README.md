@@ -1,3 +1,7 @@
+[![Build Status](https://github.com/fresh-joey/simple-social-media.svg?branch=main)](https://github.com/fresh-joey/simple-social-media)
+
+
+
 <p align="center"><a href="https://social.sjcvaipur.in" target="_blank"><img src="https://i.ibb.co/7nDB1kD/Pics-Art-06-14-08-24-08.png" width="180"></a></p>
 
 <h1 align="center">Simple Social Media</h1>
