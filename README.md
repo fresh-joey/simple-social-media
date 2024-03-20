@@ -1,3 +1,6 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/fresh-joey/simple-social-media/.github%2Fworkflows%2Fci.yml?branch=main)
+
+
 <p align="center"><a href="https://social.sjcvaipur.in" target="_blank"><img src="https://i.ibb.co/7nDB1kD/Pics-Art-06-14-08-24-08.png" width="180"></a></p>
 
 <h1 align="center">Simple Social Media</h1>
