@@ -54,11 +54,11 @@ jobs:
         with:
           node-version: 21.x
 
-      - name: Deploy to Server
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.HOST}}
-          username: ${{ secrets.USERNAME}}
-          port: ${{ secrets.PORT}}
-          key: ${{ secrets.PRIVATE_KEY}}
-          script: "cd /var/www/social_media && git pull origin main"
+      # - name: Deploy to Server
+      #   uses: appleboy/ssh-action@v1.0.3
+      #   with:
+      #     host: ${{ secrets.HOST}}
+      #     username: ${{ secrets.USERNAME}}
+      #     port: ${{ secrets.PORT}}
+      #     key: ${{ secrets.PRIVATE_KEY}}
+      #     script: "cd /var/www/social_media && git pull origin main"
