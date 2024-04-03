@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WebhookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// routes/web.php
+
+
+
+Route::post('/webhook', [WebhookController::class, 'handle']);
+
+
 
 Route::get('/', function () {
     return redirect(route('home'));
