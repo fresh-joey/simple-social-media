@@ -11,13 +11,13 @@ class WebhookController extends Controller
     {
         // Validate the webhook request (optional)
 
-        // Process the incoming webhook payload
-        $payload = $request->all();
+        // // Process the incoming webhook payload
+        // $payload = $request->all();
 
-        // Check the event type
-        $eventType = $request->header('X-GitHub-Event');
+        // // Check the event type
+        // $eventType = $request->header('X-GitHub-Event');
 
-        // Only proceed if it's a push event
+        // // Only proceed if it's a push event
         if ($eventType === 'push') {
             // Execute the script
             $process = Process::fromShellCommandline('/home/josephemmanuel/webhooks/redeploy.sh');
