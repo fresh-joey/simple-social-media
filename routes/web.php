@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WebhookController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,12 +12,6 @@ use App\Http\Controllers\WebhookController;
 |
 */
 // routes/web.php
-
-
-
-Route::post('/webhook', [WebhookController::class, 'handle']);
-
-
 
 Route::get('/', function () {
     return redirect(route('home'));
